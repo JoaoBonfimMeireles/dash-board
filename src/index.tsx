@@ -13,7 +13,8 @@ createServer({
         {
           id: 1,
           title: 'transaction 1',
-          amaunt: 400
+          amaunt: 400,
+          type: "deposit",
         }
       ]
     })
