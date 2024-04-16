@@ -1,6 +1,8 @@
 import Modal from 'react-modal';
-import { Container } from './styles';
+import { Container, TransactionTypeContainer } from './styles';
 import { Close } from '../../assets/Close';
+import { Outcome } from '../../assets/Outcome';
+import { Income } from '../../assets/Income';
 
 interface NewTransctionModalProps {
     isOpen: boolean;
@@ -34,6 +36,17 @@ export function NewTransctionModal({ isOpen, onRequestClose }: NewTransctionModa
                     type='number'
                     placeholder='Valor'
                 />
+
+                <TransactionTypeContainer>
+                    <button type='button'>
+                        <Income className="img" />
+                        <span>Entrada</span>
+                    </button>
+                    <button type='button'>
+                        <Outcome className="img" />
+                        <span>Saida</span>
+                    </button>
+                </TransactionTypeContainer>
 
                 <input
                     placeholder='Categoria'
