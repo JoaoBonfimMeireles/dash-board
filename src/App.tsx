@@ -6,7 +6,6 @@ import { DashBoard } from './components/DashBoard';
 import { NewTransctionModal } from './components/NewTransctionModal/NewTransctionModal';
 
 Modal.setAppElement("#root");
-
 export function App() {
   const [insNewTransactionalModalOpen, setInsNewTransactionalModalOpen] = useState(false);
 
