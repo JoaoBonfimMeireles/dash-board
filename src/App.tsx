@@ -8,11 +8,9 @@ import { NewTransctionModal } from './components/NewTransctionModal/NewTransctio
 Modal.setAppElement("#root");
 export function App() {
   const [insNewTransactionalModalOpen, setInsNewTransactionalModalOpen] = useState(false);
-
   function handleOpenNewTransactionModal() {
     setInsNewTransactionalModalOpen(true);
   }
-
   function handleClosenNewTransactionModal() {
     setInsNewTransactionalModalOpen(false);
   }
